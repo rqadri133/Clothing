@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-material.js"></script>
+    <script src="~/Scripts/angular-material.min.js"></script>
+
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/Scripts/angular-aria.js"></script>
+    
+ 
+<script src="~/app/app.js"></script>
+<script src="~/app/controllers.js"></script>
+<script src="~/app/services.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.1.0.js"></script>
+    <script src="~/Scripts/jquery-3.1.0.min.js"></script>
+
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    
+    <script src="~/Scripts/angular.min.js"></script>
+    
+    <link href="~/Content/angular-material/angular-material.css" rel="stylesheet" />
+    <link href="~/Content/angular-material/angular-material.min.css" rel="stylesheet" />
+    <link href="~/Content/customtheme.css" rel="stylesheet"/>
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+     
+    
+
+
+</head>
+<body ng-app="APIModule">
+
+     <div class="navbar navbar-inverse navbar-fixed-top">
+     
+                
+                 @Html.Partial("_LoginPartial")
+            </div>
+        
+    
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - By Razia Sultan</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
